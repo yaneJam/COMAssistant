@@ -2,7 +2,6 @@
 #include <string>
 
 
-#include "COMCommunicationTypedef.h"
 class COMCommunicatorImp;
 
 

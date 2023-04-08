@@ -1,5 +1,4 @@
 #include "stdafx.h"
-//#include "Command.h"
 #include "COMCommunicatorImp.h"
 #include "COMCommunication.h"
 #include <vector>
@@ -132,18 +131,7 @@ void COMCommunicatorImp::GetCommandData(unsigned char Command, unsigned char *Co
 
 }
 
-DWORD WINAPI COMCommunicatorImp::ReInitPortThreadFun(LPVOID lpParam)
-{
-	COMCommunicatorImp* pHandler = (COMCommunicatorImp*)lpParam;
-	pHandler->ReInitPortRun();
-	return 0;
-}
 
-void COMCommunicatorImp::StartReInitPortThread()
-{
-	CloseReInitPortThread();
-	m_hReInitPortThread = ::CreateThread(NULL, 0, ReInitPortThreadFun, this, 0, NULL);
-}
 
 void COMCommunicatorImp::CloseReInitPortThread()
 {
@@ -153,15 +141,6 @@ void COMCommunicatorImp::CloseReInitPortThread()
 		m_hReInitPortThread = NULL;
 	}
 }
-
-int COMCommunicatorImp::ReInitPortRun()
-{
-	Init_MainCtrlConnect(m_SysParam.strPortName, m_SysParam.strBaudRate);
-	m_hReInitPortThread = NULL;
-	m_bConnectRun = FALSE;
-	return 0;
-}
-
 
 DWORD WINAPI COMCommunicatorImp::ConnectThreadFun(LPVOID lpParam)
 {
@@ -189,68 +168,19 @@ void COMCommunicatorImp::CloseConnectTestThread()
 
 int COMCommunicatorImp::ConnectTestRun()
 {
-	/*static int count = 0;
-	while (m_bConnectRun)
-	{
-		if (m_SysParam.ConnectState == CONNECT_INIT_FAILED)
-		{
-			StartReInitPortThread();
-			break;
-		}
-		if (IsConnect())
-		{
-			count = 0;
-			if (m_SysParam.ConnectState == CONNECT_FAILED)
-			{
-				m_SysParam.ConnectState = CONNECT_SUCCESS;
-				owner->Communication_Cmd_Check(CMD_RESPONSE_COMMUNICATION_STATE);
-			}
-		}
-		else
-		{
-			if (m_SysParam.ConnectState != CONNECT_FAILED)
-			{
-				if (++count >= 5)
-				{
-					count = 0;
-					m_SysParam.ConnectState = CONNECT_FAILED;
-					owner->Communication_Cmd_Check(CMD_RESPONSE_COMMUNICATION_STATE);
-				}
-			}
-		}
-		Sleep(1000);
-	}
-	m_bConnectRun = FALSE;
-	m_hConnectThread = NULL;*/
 	return 0;
 }
 
 BOOL COMCommunicatorImp::Init_MainCtrlConnect(std::string strPortName, std::string strBaudRate)
 {
 	BOOL bRes = FALSE;
-	m_SysParam.strPortName = strPortName;
-	m_SysParam.strBaudRate = strBaudRate;
 	if (OpenPort(strPortName, strBaudRate))
 	{
 		bRes = TRUE;
-		/*if (IsConnect())
-		{
-			m_SysParam.ConnectState = CONNECT_SUCCESS;
-			owner->Communication_Cmd_Check(CMD_RESPONSE_COMMUNICATION_STATE);
-			bRes = TRUE;
-		}
-		else if (m_SysParam.ConnectState != CONNECT_FAILED)
-		{
-			m_SysParam.ConnectState = CONNECT_FAILED;
-			owner->Communication_Cmd_Check(CMD_RESPONSE_COMMUNICATION_STATE);
-		}*/
 	}
 	else
 	{
-		/*m_SysParam.ConnectState = CONNECT_INIT_FAILED;
-		owner->Communication_Cmd_Check(CMD_RESPONSE_COMMUNICATION_STATE);*/
 	}
-	//StartConnectTestThread();
 	return bRes;
 }
 //
@@ -263,14 +193,5 @@ void COMCommunicatorImp::Close_MainCtrlConnect()
 
 BOOL COMCommunicatorImp::IsConnect()
 {
-	/*m_SysParam.bConnectFlag = FALSE;
-	if (SendCommand(CMD_SYS_COMTEST))
-	{
-		Sleep(1000);
-		if (m_SysParam.bConnectFlag == TRUE)
-		{
-			return TRUE;
-		}
-	}*/
 	return FALSE;
 }
