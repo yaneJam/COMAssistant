@@ -1,0 +1,523 @@
+{
+   "__anyState__" : {
+      "children" : {
+         "COMCommunicator" : {
+            "children" : {
+               "BuadRate:115200" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "BuadRate:115200",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator"
+               },
+               "Port:COM4" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "Port:COM4",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator"
+               },
+               "className:COMCommunicator" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "className:COMCommunicator",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator"
+               },
+               "connect" : {
+                  "left" : -149,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "connect",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 115
+               },
+               "connected" : {
+                  "left" : 111,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "connected",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 115
+               },
+               "disconnect" : {
+                  "left" : -149,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "disconnect",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 155
+               },
+               "disconnected" : {
+                  "left" : 111,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "disconnected",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 155
+               },
+               "getContext" : {
+                  "left" : -149,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "getContext",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 195
+               },
+               "packageName:COMObjects.dll" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "packageName:COMObjects.dll",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator"
+               },
+               "recieved" : {
+                  "left" : 111,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "recieved",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 195
+               },
+               "send" : {
+                  "left" : -149,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "send",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "COMCommunicator",
+                  "top" : 235
+               }
+            },
+            "left" : -149,
+            "mapperType" : "ObjectMapper",
+            "objectName" : "COMCommunicator",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "top" : 55
+         },
+         "event1" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event1"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event1"
+               }
+            },
+            "endMapper" : "toolpanel",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event1",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "send",
+            "slotName" : "messageSend",
+            "startMapper" : "toolpanel"
+         },
+         "event10" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event10"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event10"
+               }
+            },
+            "endMapper" : "COMCommunicator",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event10",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "getCOMContext",
+            "slotName" : "getContext",
+            "startMapper" : "toolpanel"
+         },
+         "event11" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event11"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event11"
+               }
+            },
+            "endMapper" : "COMCommunicator",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event11",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "write",
+            "slotName" : "send",
+            "startMapper" : "robot"
+         },
+         "event2" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event2"
+               }
+            },
+            "endMapper" : "toolpanel",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event2",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "recieved",
+            "slotName" : "messageRecieved",
+            "startMapper" : "COMCommunicator"
+         },
+         "event3" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event3"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event3"
+               }
+            },
+            "endMapper" : "robot",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event3",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "recieved",
+            "slotName" : "read",
+            "startMapper" : "COMCommunicator"
+         },
+         "event4" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event4"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event4"
+               }
+            },
+            "endMapper" : "toolpanel",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event4",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "disconnected",
+            "slotName" : "disconnected",
+            "startMapper" : "COMCommunicator"
+         },
+         "event5" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event5"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event5"
+               }
+            },
+            "endMapper" : "toolpanel",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event5",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "write",
+            "slotName" : "messageSend",
+            "startMapper" : "robot"
+         },
+         "event6" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event6"
+               },
+               "logLevel:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "logLevel:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event6"
+               }
+            },
+            "endMapper" : "COMCommunicator",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event6",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "send",
+            "slotName" : "send",
+            "startMapper" : "toolpanel"
+         },
+         "event7" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event7"
+               }
+            },
+            "endMapper" : "COMCommunicator",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event7",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "connect",
+            "slotName" : "connect",
+            "startMapper" : "toolpanel"
+         },
+         "event8" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event8"
+               }
+            },
+            "endMapper" : "COMCommunicator",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event8",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "disconnect",
+            "slotName" : "disconnect",
+            "startMapper" : "toolpanel"
+         },
+         "event9" : {
+            "children" : {
+               "eventType:0" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "eventType:0",
+                  "parentMapperType" : "EventMapper",
+                  "parentName" : "event9"
+               }
+            },
+            "endMapper" : "toolpanel",
+            "lineType" : 1,
+            "mapperType" : "EventMapper",
+            "objectName" : "event9",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "signalName" : "connected",
+            "slotName" : "connected",
+            "startMapper" : "COMCommunicator"
+         },
+         "robot" : {
+            "children" : {
+               "className:__userItem__" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "className:__userItem__",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "robot"
+               },
+               "packageName:__buildin__" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "packageName:__buildin__",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "robot"
+               },
+               "read" : {
+                  "left" : 194,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "read",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "robot",
+                  "top" : -166
+               },
+               "write" : {
+                  "left" : 454,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "write",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "robot",
+                  "top" : -166
+               }
+            },
+            "left" : 194,
+            "mapperType" : "ObjectMapper",
+            "objectName" : "robot",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "top" : -226
+         },
+         "toolpanel" : {
+            "children" : {
+               "className:__userItem__" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "className:__userItem__",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel"
+               },
+               "connect" : {
+                  "left" : -223,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "connect",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -150
+               },
+               "connected" : {
+                  "left" : -488,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "connected",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -150
+               },
+               "disconnect" : {
+                  "left" : -223,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "disconnect",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -110
+               },
+               "disconnected" : {
+                  "left" : -488,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "disconnected",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -110
+               },
+               "getCOMContext" : {
+                  "left" : -223,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "getCOMContext",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -70
+               },
+               "messageRecieved" : {
+                  "left" : -488,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "messageRecieved",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -70
+               },
+               "messageSend" : {
+                  "left" : -488,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "messageSend",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -30
+               },
+               "packageName:__buildin__" : {
+                  "mapperType" : "AttributeMapper",
+                  "objectName" : "packageName:__buildin__",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel"
+               },
+               "send" : {
+                  "left" : -223,
+                  "mapperType" : "SignalMapper",
+                  "objectName" : "send",
+                  "parentMapperType" : "ObjectMapper",
+                  "parentName" : "toolpanel",
+                  "top" : -30
+               }
+            },
+            "left" : -488,
+            "mapperType" : "ObjectMapper",
+            "objectName" : "toolpanel",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__anyState__",
+            "top" : -210
+         }
+      },
+      "layerType" : "event diagram",
+      "mapperType" : "GraphicLayer",
+      "objectName" : "__anyState__"
+   },
+   "__stateLayer__" : {
+      "children" : {
+         "__anyState__" : {
+            "children" : {
+               "bottom" : {
+                  "left" : 150,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "bottom",
+                  "parentMapperType" : "StateMapper",
+                  "parentName" : "__anyState__",
+                  "top" : 150
+               },
+               "left" : {
+                  "left" : 50,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "left",
+                  "parentMapperType" : "StateMapper",
+                  "parentName" : "__anyState__",
+                  "top" : 100
+               },
+               "right" : {
+                  "left" : 250,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "right",
+                  "parentMapperType" : "StateMapper",
+                  "parentName" : "__anyState__",
+                  "top" : 100
+               },
+               "top" : {
+                  "left" : 150,
+                  "mapperType" : "SlotMapper",
+                  "objectName" : "top",
+                  "parentMapperType" : "StateMapper",
+                  "parentName" : "__anyState__",
+                  "top" : 50
+               }
+            },
+            "left" : 50,
+            "mapperType" : "StateMapper",
+            "objectName" : "__anyState__",
+            "parentMapperType" : "GraphicLayer",
+            "parentName" : "__stateLayer__",
+            "top" : 50
+         }
+      },
+      "layerType" : "state diagram",
+      "mapperType" : "GraphicLayer",
+      "objectName" : "__stateLayer__"
+   }
+}
