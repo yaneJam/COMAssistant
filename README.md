@@ -1,5 +1,5 @@
 # COMAssistant
- a flexible serial port tool that can be reprogramed by qml ,cpp or diagram to make it perfect for you
+ a flexible serial port tool that can be reprogramed by qml ,cpp or diagram to make it perfect for you. compile by MSVC2019
 
 # COMssistant 是什么？
 >COMAssiant是一个可编程的串口调试工具，可以使用qml+cpp+状态事件图三种形式来更改它，同时示例提供了一个自动回复的聊天机器人，您可以自由的更改其中任何的部分,包括通信协议，界面逻辑等，让它成为一个合适您的业务的调试仿真工具
